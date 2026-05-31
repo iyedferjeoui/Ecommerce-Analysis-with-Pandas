@@ -1,88 +1,81 @@
-# E-Commerce Data Analysis — Python (Pandas)
+# E-Commerce Data Analysis Dashboard — Python (Pandas & Matplotlib)
 
-This is a small data analysis project I built using Python and pandas.
-The goal was to practice working with real data and understand how to extract useful information from it.
+This is Version 2 of my E-Commerce Data Analysis project built with Python, Pandas, and Matplotlib.
 
----
-
-## Description
-
-The script reads an e-commerce dataset from a CSV file and prints a simple report in the console.
-
-It focuses on:
-
-* calculating revenue and profit
-* analyzing customer behavior
-* understanding returns
-* grouping data to find patterns
-
-I tried to write clean and organized code by separating each task into its own function.
+The program reads an e-commerce dataset, validates the data, performs business analysis, and generates both a console report and visual dashboards.
 
 ---
 
-## What the program does
+## Features
 
-### Revenue analysis
+### Revenue Analysis
 
-* Calculates total revenue for each product category
-* Shows which categories generate the most money
-* Calculates revenue by country (only for completed orders)
+* Calculates revenue by product category
+* Calculates revenue by country (completed orders only)
+* Sorts results by highest revenue
 
----
+### Customer Behavior Analysis
 
-### Customer behavior
+* Counts completed, abandoned, and cancelled orders
+* Calculates status percentages
+* Computes abandonment rates by country
 
-* Counts how many orders are:
+### Returns Analysis
 
-  * completed
-  * abandoned
-  * cancelled
-* Shows the percentage of each
-* Calculates abandonment rate by country
+* Calculates return rates
+* Identifies the most common return reasons
+* Finds the most returned product categories
 
----
+### Data Preparation
 
-### Returns analysis
+* Creates revenue and profit columns
+* Handles missing return data
+* Converts return IDs to numeric values
 
-* Calculates how many orders were returned
-* Shows the most common return reasons
-* Finds which categories are returned the most
+### Data Visualization
 
----
+The dashboard includes:
 
-### Data preparation
-
-Before analysis, the script:
-
-* creates new columns:
-
-  * revenue = price × quantity
-  * profit = revenue − cost
-* handles missing values (for returns)
+* Revenue by Category
+* Revenue by Country
+* Order Status Distribution
+* Return Reasons Analysis
 
 ---
 
-## Concepts I used
+## Improvements Over Version 1
 
-* pandas DataFrame
-* groupby and aggregation
-* filtering data
-* value_counts
-* lambda functions
-* handling missing data
-* writing modular code (functions)
+✅ Added data validation
+
+✅ Added file existence checks
+
+✅ Added exception handling
+
+✅ Added a 2×2 visualization dashboard
+
+✅ Improved data cleaning and preparation
+
+✅ Improved code organization and documentation
 
 ---
 
-## How to run
+## Technologies Used
 
-Install the libraries:
+* Python
+* Pandas
+* Matplotlib
+
+---
+
+## Installation
 
 ```bash
 pip install pandas matplotlib
 ```
 
-Run the script:
+---
+
+## Run the Project
 
 ```bash
 python script.py
@@ -90,28 +83,17 @@ python script.py
 
 ---
 
-## What I learned
+## What I Learned
 
-This project helped me understand how to:
-
-* work with real datasets
-* clean and prepare data
-* calculate useful metrics
-* think more like a data analyst
-
----
-
-## Possible improvements
-
-* add charts to visualize the results
-* export the report to a file
-* build a small dashboard
+* Data cleaning and preparation
+* Data analysis with Pandas
+* Data visualization with Matplotlib
+* Exception handling
+* Writing modular and maintainable code
 
 ---
 
 ## Author
 
-Iyed Ferjeoui
-Computer Science student — ISSAT Sousse
-
----
+**Iyed Ferjeoui**
+Computer Science Student — ISSAT Sousse
