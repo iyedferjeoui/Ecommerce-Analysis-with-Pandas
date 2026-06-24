@@ -6,6 +6,20 @@ The program reads an e-commerce dataset, validates the data, performs business a
 
 ---
 
+## Google Colab
+
+A Google Colab version of this project is available.
+
+You can run the project in your browser without installing anything.
+
+### How to use
+
+* Open the notebook in Google Colab
+* Upload your CSV file or use a GitHub CSV link
+* Run the cells
+
+---
+
 ## Features
 
 ### Revenue Analysis
@@ -46,16 +60,12 @@ The dashboard includes:
 ## Improvements Over Version 1
 
 ✅ Added data validation
-
 ✅ Added file existence checks
-
 ✅ Added exception handling
-
 ✅ Added a 2×2 visualization dashboard
-
 ✅ Improved data cleaning and preparation
-
 ✅ Improved code organization and documentation
+✅ Added Google Colab version
 
 ---
 
@@ -95,5 +105,5 @@ python script.py
 
 ## Author
 
-**Iyed Ferjeoui**
+Iyed Ferjeoui
 Computer Science Student — ISSAT Sousse
