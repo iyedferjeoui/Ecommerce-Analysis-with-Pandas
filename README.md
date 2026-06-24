@@ -1,90 +1,89 @@
 # E-Commerce Data Analysis — Python (Pandas)
 
-This is a small data analysis project I built using Python and pandas.
-The goal was to practice working with real data and understand how to extract useful information from it.
+This is a small project I built using Python and pandas to practice working with data.
+
+---
+
+## Google Colab Version
+
+I also made a Google Colab version of this project.
+
+You can run the code in your browser without installing anything.
+
+### How to use
+
+1. Open the notebook in Google Colab
+2. Upload your CSV file or use a GitHub link
+3. Run the cells
 
 ---
 
 ## Description
 
-The script reads an e-commerce dataset from a CSV file and prints a simple report in the console.
+The script reads an e-commerce dataset from a CSV file and prints a simple report.
 
 It focuses on:
 
-* calculating revenue and profit
-* analyzing customer behavior
-* understanding returns
-* grouping data to find patterns
+* revenue and profit
+* customer behavior
+* returns
+* grouping data
 
-I tried to write clean and organized code by separating each task into its own function.
+The code is organized into functions.
 
 ---
 
 ## What the program does
 
-### Revenue analysis
+### Revenue
 
-* Calculates total revenue for each product category
-* Shows which categories generate the most money
-* Calculates revenue by country (only for completed orders)
-
----
+* Revenue by category
+* Revenue by country (completed orders only)
 
 ### Customer behavior
 
-* Counts how many orders are:
+* Number of completed, abandoned, and cancelled orders
+* Percentage of each
+* Abandonment rate by country
 
-  * completed
-  * abandoned
-  * cancelled
-* Shows the percentage of each
-* Calculates abandonment rate by country
+### Returns
 
----
-
-### Returns analysis
-
-* Calculates how many orders were returned
-* Shows the most common return reasons
-* Finds which categories are returned the most
-
----
+* Number of returned orders
+* Return reasons
+* Most returned categories
 
 ### Data preparation
 
-Before analysis, the script:
-
-* creates new columns:
+* Creates:
 
   * revenue = price × quantity
   * profit = revenue − cost
-* handles missing values (for returns)
+* Handles missing values
 
 ---
 
-## Concepts I used
+## Concepts used
 
 * pandas DataFrame
-* groupby and aggregation
-* filtering data
+* groupby
+* filtering
 * value_counts
 * lambda functions
-* handling missing data
-* writing modular code (functions)
+* functions (modular code)
 
 ---
 
 ## How to run
 
-Install the libraries:
+Install:
 
-```bash
+```bash id="u7a1m2"
 pip install pandas matplotlib
 ```
 
-Run the script:
+Run:
 
-```bash
+```bash id="g8p2x9"
 python script.py
 ```
 
@@ -92,20 +91,18 @@ python script.py
 
 ## What I learned
 
-This project helped me understand how to:
-
-* work with real datasets
-* clean and prepare data
-* calculate useful metrics
-* think more like a data analyst
+* working with datasets
+* cleaning data
+* basic analysis
+* organizing code
 
 ---
 
 ## Possible improvements
 
-* add charts to visualize the results
-* export the report to a file
-* build a small dashboard
+* add charts
+* export results
+* build a dashboard
 
 ---
 
@@ -113,5 +110,3 @@ This project helped me understand how to:
 
 Iyed Ferjeoui
 Computer Science student — ISSAT Sousse
-
----
